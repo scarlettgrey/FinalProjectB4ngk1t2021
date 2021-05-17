@@ -17,8 +17,8 @@ testCase = {
 for x, y, a, b in zip(ds['Nama_Rumah_Sakit'], ds['Total_Kamar'], ds['Long'], ds['Lat']):
     testCase['Nama_Rumah_Sakit'].append(x)
     testCase['Total_Kamar'].append(y)
-    testCase['Long'].append(a.strip('\ufffd'))
-    testCase['Lat'].append(b.strip('\ufffd'))
+    testCase['Long'].append(a)
+    testCase['Lat'].append(b)
 
 Loops = 1
 for _ in range(5):
