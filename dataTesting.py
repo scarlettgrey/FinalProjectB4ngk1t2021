@@ -16,21 +16,13 @@ dirlong = []
 dirlat = []
 
 for x in X['Long']:
-    divs = re.search(r'^([0-9]{1,3}).{2}([0-9]{1,3})\' ([0-9]{1,3}\.[0-9]{5})\'\' ([WE])', x)
-    long.append(int(divs[1]) + int(divs[2]) / 60 + float(divs[3]) / 3600)
-    dirlong.append(divs[4])
+    long.append(x)
 
 for x in X['Lat']:
-    divs = re.search(r'^([0-9]{1,3}).{2}([0-9]{1,3})\' ([0-9]{1,3}\.[0-9]{5})\'\' ([SN])', x)
-    lat.append(int(divs[1]) + int(divs[2]) / 60 + float(divs[3]) / 3600)
-    dirlat.append(divs[4])
+    lat.append(x)
 
-rand_long = '106 50\' 12.32500\'\' E'
-rand_lat = '6 11\' 59.48000\'\' S'
-divlong = re.search(r'^([0-9]{1,3}).{1}([0-9]{1,3})\' ([0-9]{1,3}\.[0-9]{5})\'\' ([WE])', rand_long)
-divlat = re.search(r'^([0-9]{1,3}).{1}([0-9]{1,3})\' ([0-9]{1,3}\.[0-9]{5})\'\' ([SN])', rand_lat)
-longs, dirlongs = int(divlong[1]) + int(divlong[2]) / 60 + float(divlong[3]) / 3600, divlong[4]
-lats, dirlats = int(divlat[1]) + int(divlat[2]) / 60 + float(divlat[3]) / 3600, divlat[4]
+longs = 106.80000
+lats = -6.20132
 
 for a, b in zip(long, lat):
 #     lat_dest = radians(a)
