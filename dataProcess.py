@@ -21,6 +21,8 @@ X['jumlah_tempat_tidur_kelas_kelas_1'] = X['jumlah_tempat_tidur_kelas_kelas_1'].
 X['jumlah_tempat_tidur_kelas_kelas_2'] = X['jumlah_tempat_tidur_kelas_kelas_2'].apply(is_Numbers)
 X['jumlah_tempat_tidur_kelas_kelas_3'] = X['jumlah_tempat_tidur_kelas_kelas_3'].apply(is_Numbers)
 
+X = X.drop(X[X['alamat'].isna()].index)
+
 LongLat = {
     'Nama_Rumah_Sakit' : [],
     'Lokasi' : {
@@ -29,27 +31,34 @@ LongLat = {
     },
     'Total_Kamar': []
 }
-Error = []
+
+#Error = []
 for a, b, c, d, e, f, g, h, i, j, k in zip(X['alamat'], X['kelurahan'], X['kecamatan'], X['kabupaten_kota'], X['nama_rumah_sakit'], X['jumlah_tempat_tidur_kelas_vvip'].fillna(0), X['jumlah_tempat_tidur_kelas_vip'].fillna(0), X['jumlah_tempat_tidur_kelas_eksekutif'].fillna(0), X['jumlah_tempat_tidur_kelas_kelas_1'].fillna(0), X['jumlah_tempat_tidur_kelas_kelas_2'].fillna(0), X['jumlah_tempat_tidur_kelas_kelas_3'].fillna(0)):
     try:
         results = geocoder.geocode(a + ',' + b + ',' + c + ',' + d)
+        LongLat['Lokasi']['Long'].append(results[0]['geometry']['lng'])
+        LongLat['Lokasi']['Lat'].append(results[0]['geometry']['lat'])        
         LongLat['Nama_Rumah_Sakit'].append(e)
-        LongLat['Lokasi']['Long'].append(results[0]['annotations']['DMS']['lng'])
-        LongLat['Lokasi']['Lat'].append(results[0]['annotations']['DMS']['lat'])    
         LongLat['Total_Kamar'].append(int(f) + int(g) + int(h) + int(i) + int(j) + int(k))
     except TypeError:
-        print(e, 'TypeError')
-        Error.append(e)
+        LongLat['Lokasi']['Long'].append('TypeError')
+        LongLat['Lokasi']['Lat'].append('TypeError')  
+        LongLat['Nama_Rumah_Sakit'].append(e) 
+        LongLat['Total_Kamar'].append(int(f) + int(g) + int(h) + int(i) + int(j) + int(k))
     except IndexError:
-        print(e, 'IndexError')
-        Error.append(e)
+        LongLat['Lokasi']['Long'].append('IndexError')
+        LongLat['Lokasi']['Lat'].append('IndexError')   
+        LongLat['Nama_Rumah_Sakit'].append(e)
+        LongLat['Total_Kamar'].append(int(f) + int(g) + int(h) + int(i) + int(j) + int(k))
 
+'''
 with open('Errors.txt', 'w') as e:
     e.write('Nama Rumah Sakit')
     for a in Error:
         e.write('\n' + a)
+'''
 
 with open('Outputs.csv', 'w') as f:
     f.write('Nama_Rumah_Sakit,Long,Lat,Total_Kamar')
     for a in range(len(LongLat['Nama_Rumah_Sakit']) - 1):
-        f.write('\n' + LongLat['Nama_Rumah_Sakit'][a] + ',' + LongLat['Lokasi']['Long'][a] + ',' + LongLat['Lokasi']['Lat'][a] + ',' + str(LongLat['Total_Kamar'][a]))
+        f.write('\n' + LongLat['Nama_Rumah_Sakit'][a] + ',' + str(LongLat['Lokasi']['Long'][a]) + ',' + str(LongLat['Lokasi']['Lat'][a]) + ',' + str(LongLat['Total_Kamar'][a]))
