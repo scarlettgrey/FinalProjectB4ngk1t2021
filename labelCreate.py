@@ -7,9 +7,9 @@ import os
 
 def big(X):
     max = -inf
-    for x in X:
-        if x > max:
-            max = x
+    for i in X:
+        if i > max:
+            max = i
     return max
 
 for i, j in zip(os.listdir('./TestCase'), os.listdir('./RandLoc')):
@@ -44,8 +44,11 @@ for i, j in zip(os.listdir('./TestCase'), os.listdir('./RandLoc')):
     for x, y in zip(Loc['Long'], Loc['Lat']):
         Temp = []
         for a, b, c, d in zip(Data['Long'], Data['Lat'], Data['Kamar'], Data['Dokter']):
-            distances = float(str(geodesic((b, a), (y, x)))[:-2])
-            Temp.append(c + d - distances)
+            if c > 0 and d > 0:
+                distances = float(str(geodesic((b, a), (y, x)))[:-2])
+                Temp.append(0.00002 * (c + d) - distances)
+            else:
+                Temp.append(-inf)
         biggest = big(Temp)
         Label.append(Temp.index(biggest))
 
