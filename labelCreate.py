@@ -40,10 +40,10 @@ for i, j in zip(os.listdir('./TestCase'), os.listdir('./RandLoc')):
 
     # Label for RandomLongLat0.csv and TestCase1.csv
     Label = []
-
-    for a, b, c, d in zip(Data['Long'], Data['Lat'], Data['Kamar'], Data['Dokter']):
+    
+    for x, y in zip(Loc['Long'], Loc['Lat']):
         Temp = []
-        for x, y in zip(Loc['Long'], Loc['Lat']):
+        for a, b, c, d in zip(Data['Long'], Data['Lat'], Data['Kamar'], Data['Dokter']):
             distances = float(str(geodesic((b, a), (y, x)))[:-2])
             Temp.append(c + d - distances)
         biggest = big(Temp)
