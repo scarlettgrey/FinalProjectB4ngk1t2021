@@ -1,2 +1,5 @@
-AYO KERJA 1 BULAN LAGI KOK ABIS ITU BISA BOBO
-wkwk
+Don't forget Deadline is 4 JUNE 2021
+
+Thanks
+
+:D
