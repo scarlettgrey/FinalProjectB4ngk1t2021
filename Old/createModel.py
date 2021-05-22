@@ -1,4 +1,3 @@
-from os import access
 from geopy import distance
 from numpy.core.numeric import Inf
 import pandas as pd
