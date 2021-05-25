@@ -1,0 +1,134 @@
+English,Indonesian
+itching,gatal
+skin rash,ruam kulit
+nodal skin eruptions,erupsi kulit nodal
+continuous sneezing,bersin terus menerus
+shivering,gemetaran
+chills,panas dingin
+joint pain,nyeri sendi
+stomach pain,sakit perut
+acidity,keasaman
+ulcers on tongue,bisul di lidah
+muscle wasting,pemborosan otot
+vomiting,muntah
+burning micturition,membakar miksi
+spotting  urination,bercak buang air kecil
+fatigue,kelelahan
+weight gain,penambahan berat badan
+anxiety,kegelisahan
+cold hands and feets,tangan dan kaki dingin
+mood swings,perubahan suasana hati
+weight loss,penurunan berat badan
+restlessness,kegelisahan
+lethargy,kelesuan
+patches in throat,bercak di tenggorokan
+irregular sugar level,kadar gula tidak teratur
+cough,batuk
+high fever,demam tinggi
+sunken eyes,mata cekung
+breathlessness,sesak napas
+sweating,berkeringat
+dehydration,dehidrasi
+indigestion,gangguan pencernaan
+headache,sakit kepala
+yellowish skin,kulit kekuningan
+dark urine,urine berwarna gelap
+nausea,mual
+loss of appetite,kehilangan selera makan
+pain behind the eyes,sakit di belakang mata
+back pain,sakit punggung
+constipation,sembelit
+abdominal pain,sakit perut
+diarrhoea,diare
+mild fever,demam ringan
+yellow urine,urin kuning
+yellowing of eyes,menguningnya mata
+acute liver failure,gagal hati akut
+fluid overload,kelebihan cairan
+swelling of stomach,pembengkakan perut
+swelled lymph nodes,pembengkakan kelenjar getah bening
+malaise,rasa tidak enak
+blurred and distorted vision,penglihatan kabur dan terdistorsi
+phlegm,dahak
+throat irritation,iritasi tenggorokan
+redness of eyes,kemerahan pada mata
+sinus pressure,tekanan sinus
+runny nose,pilek
+congestion,kemacetan
+chest pain,nyeri dada
+weakness in limbs,kelemahan di tungkai
+fast heart rate,detak jantung cepat
+pain during bowel movements,nyeri saat buang air besar
+pain in anal region,nyeri di daerah anus
+bloody stool,bangku berdarah
+irritation in anus,iritasi di anus
+neck pain,sakit leher
+dizziness,pusing
+cramps,kram
+bruising,memar
+obesity,kegemukan
+swollen legs,kaki bengkak
+swollen blood vessels,pembuluh darah bengkak
+puffy face and eyes,wajah dan mata bengkak
+enlarged thyroid,tiroid membesar
+brittle nails,kuku rapuh
+swollen extremeties,ekstremitas bengkak
+excessive hunger,kelaparan yang berlebihan
+extra marital contacts,kontak perkawinan ekstra
+drying and tingling lips,mengeringkan dan kesemutan bibir
+slurred speech,pidato cadel
+knee pain,sakit lutut
+hip joint pain,nyeri sendi pinggul
+muscle weakness,kelemahan otot
+stiff neck,leher kaku
+swelling joints,sendi bengkak
+movement stiffness,kekakuan gerakan
+spinning movements,gerakan berputar
+loss of balance,kehilangan keseimbangan
+unsteadiness,kegoyangan
+weakness of one body side,kelemahan satu sisi tubuh
+loss of smell,kehilangan bau
+bladder discomfort,ketidaknyamanan kandung kemih
+foul smell of urine,bau pesing
+continuous feel of urine,terus menerus merasakan urine
+passage of gases,bagian gas
+internal itching,gatal internal
+toxic look (typhos),tampilan beracun (typhos)
+depression,depresi
+irritability,sifat lekas marah
+muscle pain,nyeri otot
+altered sensorium,sensorium yang diubah
+red spots over body,bintik-bintik merah di seluruh tubuh
+belly pain,sakit perut
+abnormal menstruation,menstruasi yang tidak normal
+dischromic  patches,tambalan dischromic
+watering from eyes,berair dari mata
+increased appetite,nafsu makan meningkat
+polyuria,poliuria
+family history,sejarah keluarga
+mucoid sputum,dahak berlendir
+rusty sputum,dahak berkarat
+lack of concentration,kurang konsenterasi
+visual disturbances,gangguan penglihatan
+receiving blood transfusion,menerima transfusi darah
+receiving unsterile injections,menerima suntikan yang tidak steril
+coma,koma
+stomach bleeding,pendarahan perut
+distention of abdomen,distensi perut
+history of alcohol consumption,riwayat konsumsi alkohol
+fluid overload,kelebihan cairan
+blood in sputum,darah dalam dahak
+prominent veins on calf,vena menonjol pada betis
+palpitations,palpitasi
+painful walking,berjalan menyakitkan
+pus filled pimples,nanah berisi jerawat
+blackheads,komedo
+scurring,mendengkur
+skin peeling,kulit mengelupas
+silver like dusting,perak seperti debu
+small dents in nails,penyok kecil pada kuku
+inflammatory nails,kuku bengkak
+blister,lepuh
+red sore around nose,kemerahan di sekitar hidung
+yellow crust ooze,kerak kuning keluar
+prognosis,prognosa
