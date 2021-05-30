@@ -12,6 +12,7 @@ d. 5th layers using softmax activation because it’s not binary prediction </br
 a. Our loss function is sparse_categorical_crossentropy </br>
 b. Our optimizer is adam </br>
 c. After 50 epoch it’s get 100% acc on training and 97.6% acc on validation
+![Train and Validation Accuracy after 50 epochs](https://www.github.com/scarlettgrey/FinalProjectB4ngk1t2021/images.png)
 5. Saving the model using model.save </br>
 a. Using model.save(‘./Model’) so it’ll saved as protobuf file with its variables on Model directory
 6. Upload the model and DiseaseLabel.csv to Bucket(Google Cloud Platform)
