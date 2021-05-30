@@ -17,3 +17,7 @@ c. After 50 epoch it’s get 100% acc on training and 97.6% acc on validation
 a. Using model.save(‘./Model’) so it’ll saved as protobuf file with its variables on Model directory
 6. Upload the model and DiseaseLabel.csv to Bucket(Google Cloud Platform)
 7. Creating Cloud Function so it can be used online using http request
+--------------------------------------------------------------------------------------------------------
+How to use the model in cloud : 
+- Using Python : 
+  - https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/UseModelOnline.py
