@@ -7,8 +7,8 @@ b. Creating Disease Label file for get the disease name after prediction done
 a. Our model consisting of 5 layer of dense with input_size equal equal to number of symptoms from the data (132) and output size was 42 </br>
 b. 1st, 3rd, 4th layers using relu activation </br>
 c. 2nd layers using selu activation </br>
-d. 5th layers using softmax activation because it’s not binary prediction </br>
-1[](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/Images/model.jpg)
+d. 5th layers using softmax activation because it’s multiclassification prediction </br>
+![](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/Images/model.jpg)
 4. Training the model using model.compile </br>
 a. Our loss function is sparse_categorical_crossentropy </br>
 b. Our optimizer is adam </br>
