@@ -12,9 +12,9 @@ d. 5th layers using softmax activation because it’s not binary prediction </br
 4. Training the model using model.compile </br>
 a. Our loss function is sparse_categorical_crossentropy </br>
 b. Our optimizer is adam </br>
-c. After 50 epoch it’s get 100% acc on training
+c. After 50 epoch it’s get 100% acc on training </br>
 ![](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/Images/Acc.jpg)
-d. and 97.6% acc on Validation
+d. and 97.6% acc on Validation </br>
 ![](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/Images/valAcc.jpg)
 5. Saving the model using model.save </br>
 a. Using model.save(‘./Model’) so it’ll saved as protobuf file with its variables on Model directory
