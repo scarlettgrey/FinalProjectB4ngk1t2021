@@ -23,4 +23,4 @@ a. Using model.save(‘./Model’) so it’ll saved as protobuf file with its va
 --------------------------------------------------------------------------------------------------------
 How to use the model in cloud : 
 - Using Python : 
-  - https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/UseModelOnline.py
+  - [Test Model Online](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/UseModelOnline.py)
