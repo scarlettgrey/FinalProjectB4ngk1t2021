@@ -3,7 +3,7 @@ Step-by-step we used in this project:
 2. Preprocessing the data using python </br>
 a. Change the label from name of the disease to numeric value like Fungal Infection -> 1 </br>
 b. Creating Disease Label file for get the disease name after prediction done
-3. Creating Model using tensorflow.keras.models.Sequential </br>
+3. Creating Model using tensorflow.keras.models.Sequential (you can use [createModel.py](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/createModel.py))</br>
 a. Our model consisting of 5 layer of dense with input_size equal equal to number of symptoms from the data (132) and output size was 42 </br>
 b. 1st, 3rd, 4th layers using relu activation </br>
 c. 2nd layers using selu activation </br>
