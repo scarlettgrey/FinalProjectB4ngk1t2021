@@ -67,7 +67,7 @@ for i in range(len(testData)):
         if int(row[0]) == temp.index(max) + 1:
             result.append(int(row[0]))
             break
-
+# Confusion Matrix
 conf_matrix = tf.math.confusion_matrix(labels=testTemp, predictions=result)
 print("Confunsions Matrix")
 print(len(conf_matrix), 'X', len(conf_matrix[0]))
@@ -76,23 +76,5 @@ for i in conf_matrix:
         print(j.numpy(), end=" ")
     print()
 
-# Save model weight
-# model_json = model.to_json()
-# with open('./Model/model.json', 'w') as f:
-#     f.write(model_json)
-# model.save_weights('./Model/model.h5')
-
-# Save model
-# tf.keras.Model.save(model, './Model')
-
-# Save Pickle Model
-# import pickle
-# weight = model.get_weights()
-# pkl = './Pkl/model.pkl'
-# with open(pkl, 'wb') as f:
-#     pickle.dump(weight, f, protocol=pickle.HIGHEST_PROTOCOL)
-
-# import random
-# pred = []
-# for i in range(132):
-#     pred.append(random.randint(0,1))
+Save model
+tf.keras.Model.save(model, './Model')
