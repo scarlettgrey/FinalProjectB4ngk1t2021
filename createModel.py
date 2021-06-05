@@ -49,32 +49,5 @@ model = tf.keras.models.Sequential([
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['Recall', 'Precision', 'accuracy'])
 history = model.fit(trainData, trainLabel, validation_data=(testData, testLabel), epochs=50, verbose=1)
 
-f = open('./processedData/DiseaseLabel.csv', 'r')
-f.readline()
-rows = f.readlines()
-f.close()
-result = []
-for i in range(len(testData)):
-    res = model.predict(np.array(testData[i]).reshape(1, 132))
-    max = -999
-    temp = []
-    for r in res[0]:
-        temp.append(r)
-        if max < r:
-            max = r
-    for row in rows:
-        row = row.strip('\n').split(',')
-        if int(row[0]) == temp.index(max) + 1:
-            result.append(int(row[0]))
-            break
-# Confusion Matrix
-conf_matrix = tf.math.confusion_matrix(labels=testTemp, predictions=result)
-print("Confunsions Matrix")
-print(len(conf_matrix), 'X', len(conf_matrix[0]))
-for i in conf_matrix:
-    for j in i:
-        print(j.numpy(), end=" ")
-    print()
-
 # Save model
 tf.keras.Model.save(model, './Model')
