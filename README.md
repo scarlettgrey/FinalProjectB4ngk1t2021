@@ -20,8 +20,8 @@ d. and 97.6% acc on Validation </br>
 a. Using model.save(‘./Model’) so it’ll saved as protobuf file with its variables on Model directory
 6. Upload the model and DiseaseLabel.csv to Bucket(Google Cloud Platform)
 7. Creating Cloud Function so it can be used online using http request
-a. Use this [Python Code](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/CloudFunction/main.py) for cloud functions
-b. Use this [Requirement](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/CloudFunction/requirements.txt)
+  a. Use this [Python Code](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/CloudFunction/main.py) for cloud functions
+  b. Use this [Requirement](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/CloudFunction/requirements.txt)
 --------------------------------------------------------------------------------------------------------
 How to use the model in cloud : 
 - Using [Python](https://github.com/scarlettgrey/FinalProjectB4ngk1t2021/blob/main/TestModelOnline/UseModelOnline.py)
